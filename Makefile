@@ -10,30 +10,32 @@
 #                                                                              #
 # **************************************************************************** #
 
- SRCS1 = 	./srcs/philo_one/init_philo.c		\
+ SRCS1 = 	./srcs/philo_one/init_philo.c	\
 		./srcs/philo_one/philo_action.c		\
 		./srcs/philo_one/philo_live.c		\
-		./srcs/philo_one/philo_monitoring.c		\
+		./srcs/philo_one/philo_monitoring.c	\
 		./srcs/philo_one/tools.c			\
-		./srcs/philo_one/philo_one.c			\
+		./srcs/philo_one/philo_one.c		\
 		./srcs/philo_one/philo_state.c		\
 		./srcs/philo_one/philo_utils.c		\
-		./srcs/philo_one/philo_init_mutex.c
+		./srcs/philo_one/philo_init_mutex.c	\
+		./srcs/philo_one/ft_sleep.c
 
- SRCS2 = 	./srcs/philo_two/init_philo.c		\
+ SRCS2 = 	./srcs/philo_two/init_philo.c	\
 		./srcs/philo_two/philo_action.c		\
 		./srcs/philo_two/philo_live.c		\
-		./srcs/philo_two/philo_monitoring.c		\
+		./srcs/philo_two/philo_monitoring.c	\
 		./srcs/philo_two/tools.c			\
-		./srcs/philo_two/philo_two.c			\
+		./srcs/philo_two/philo_two.c		\
 		./srcs/philo_two/philo_state.c		\
-		./srcs/philo_two/philo_utils.c
+		./srcs/philo_two/philo_utils.c		\
+		./srcs/philo_two/ft_sleep.c
 
  SRCS3 = 	./srcs/philo_three/init_philo.c		\
 		./srcs/philo_three/philo_action.c		\
-		./srcs/philo_three/philo_live.c		\
+		./srcs/philo_three/philo_live.c			\
 		./srcs/philo_three/philo_monitoring.c	\
-		./srcs/philo_three/tools.c			\
+		./srcs/philo_three/tools.c				\
 		./srcs/philo_three/philo_three.c		\
 		./srcs/philo_three/philo_state.c		\
 		./srcs/philo_three/philo_utils.c

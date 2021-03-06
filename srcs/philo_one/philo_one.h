@@ -54,6 +54,7 @@ typedef struct		s_creat
 	pthread_t		lose;
 }					t_creat;
 
+void				ft_sleep(struct timeval t_start, int end);
 char				*ft_itoa(long nb);
 int					ft_strlen(char *str);
 int					ft_atoi(const char *str);

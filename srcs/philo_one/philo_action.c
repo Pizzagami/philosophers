@@ -32,18 +32,24 @@ void		release_fork(t_philo *philo)
 
 void		eat(t_philo *philo, t_timeval t_start)
 {
+	struct timeval t_start_action;
+
+	gettimeofday(&t_start_action, NULL);
 	pthread_mutex_lock(philo->output);
 	display(t_start, philo->number, "is eating");
 	pthread_mutex_unlock(philo->output);
-	usleep(philo->time_to_eat);
+	ft_sleep(t_start_action, philo->time_to_eat);
 }
 
 void		psleep(t_philo *philo, t_timeval t_start)
 {
+	struct timeval t_start_action;
+
+	gettimeofday(&t_start_action, NULL);
 	pthread_mutex_lock(philo->output);
 	display(t_start, philo->number, "is sleeping");
 	pthread_mutex_unlock(philo->output);
-	usleep(philo->time_to_sleep);
+	ft_sleep(t_start_action, philo->time_to_sleep);
 	pthread_mutex_lock(philo->output);
 	display(t_start, philo->number, "is thinking");
 	pthread_mutex_unlock(philo->output);
